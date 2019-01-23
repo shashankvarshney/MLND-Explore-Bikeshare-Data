@@ -12333,7 +12333,7 @@ City: Chicago
 <span class="n">proportion_subscriber</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">proportion_customer</span> <span class="o">=</span> <span class="p">{}</span>
 
-<span class="c1"># Loop to save all variables in question in a dictionary with key as city.</span>
+<span class="c1"># Loop to save all variables in questionFunct in a dictionary with key as city.</span>
 <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">data_file</span><span class="p">:</span>
     <span class="n">output_number_of_trips</span> <span class="o">=</span> <span class="n">number_of_trips</span><span class="p">(</span><span class="n">data_file</span><span class="p">[</span><span class="n">city</span><span class="p">])</span> <span class="c1"># output variable to hold the tuple returned by function.</span>
     <span class="n">subscribers_trips</span><span class="p">[</span><span class="n">city</span><span class="p">]</span> <span class="o">=</span> <span class="n">output_number_of_trips</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
@@ -12828,7 +12828,7 @@ AABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># This will plot a histogram of all trips</span>
@@ -12845,6 +12845,7 @@ AABJRU5ErkJggg==
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">trip_time_list</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Trip Durations&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Duration (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;Washington_histogram_with_outliers.png&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
@@ -13058,7 +13059,7 @@ MzPLOBzMzCzjcDAzs4zDwczMMg4HMzPL/H8+ldwCCZFHYQAAAABJRU5ErkJggg==
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># This will plot a histogram of all trips taken by Customers</span>
@@ -13075,11 +13076,13 @@ MzPLOBzMzCzjcDAzs4zDwczMMg4HMzPL/H8+ldwCCZFHYQAAAABJRU5ErkJggg==
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">trip_time_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">range</span><span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">74</span><span class="p">),</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Trip Durations taken by Customers&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Duration (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;Washington_Customers_histogram.png&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">trip_time_list</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="nb">range</span><span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">74</span><span class="p">),</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">15</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of Trip Durations taken by Subscribers&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Duration (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;Washington_Subscribers_histogram.png&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 
