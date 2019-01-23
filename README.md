@@ -1,5 +1,17 @@
 # Project Explore Berkshire Data
 
+# Table of Contents
+
+- [Project Description](#project-description)
+- [Environment and Programming Language](#environment-and-programming-language)
+- [Data Description](#data-description)
+- [Data Exploration steps](#data-exploration-steps)
+  * [Data Reading](#data-reading)
+  * [Data Cleaning](#data-cleaning)
+  * [Data Analysis](#data-analysis)
+  * [Data Visualization](#data-visualization)
+  * [Analysis of ridership by month](#analysis-of-ridership-by-month)
+  * [Analysis of Trip Durations from all cities month wise](#analysis-of-trip-durations-from-all-cities-month-wise)
 
 ## Project Description
 
