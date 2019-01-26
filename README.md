@@ -121,3 +121,6 @@ Following box plots have been plotted.
 First box plots is not showing boxes at all because there are a lot of outliers and boxplots are not visible.
 
 Limit of 50 has been put on Y-axis and boxplots are clearly visible and we can see similar trend as we saw in histograms. Trend is increasing from January to July and start decreasing till January.
+
+
+Detailed code is given in [ipython notebook](./jupyterwork/Bike_Share_Analysis.ipynb)
