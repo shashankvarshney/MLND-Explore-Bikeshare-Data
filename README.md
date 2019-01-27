@@ -27,6 +27,7 @@ Berkshire bike share data has been used for this project. Data has been included
 * Once installed, open conda prompt.
 * Create virtual environment by using `conda env create -f environment.yaml`. **environment.yaml** has been included in the repository.
 * Jupyter notebook has been used for interactively analyzing and exploring the data.
+* Python code and calculation given in the [Python Notebook](./jupyterwork/Bike_Share_Analysis.ipynb) file.
 
 
 ## Data Description
